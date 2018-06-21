@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<assert.h>
+int main()
+{
+	FILE *fp;
+	long long int *n;
+	char filename[202];
+	scanf("%s", filename);
+	fp = fopen(filename, "rb");
+	assert(fp != NULL);
+	fread(n, sizeof(long long int), 1, fp);
+	printf("%llc", n);
+	fclose(fp);
+	return 0;
+	}
