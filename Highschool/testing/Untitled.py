@@ -1,0 +1,5 @@
+name = input('請輸入檔名：')
+file = open(name, 'r',)
+content = file.read()
+print(content)
+file.close()
